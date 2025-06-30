@@ -11,7 +11,8 @@ import SwiftUI
 struct DiarySwiftDataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DiaryListView()
         }
+        .modelContainer(for: DiaryEntry.self)
     }
 }
